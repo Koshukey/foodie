@@ -1,7 +1,8 @@
 
-lib = File.expand_path("../lib", __FILE__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "foodie/version"
+# lib = File.expand_path("../lib", __FILE__)
+# $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+# require "foodie/version"
+require File.expand_path("../lib/foodie/version", __FILE__)
 
 Gem::Specification.new do |spec|
   spec.name          = "foodie"
@@ -38,4 +39,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "aruba"
   spec.add_dependency "activesupport", "~> 4.2.0"
   spec.add_dependency "thor"
+
 end
