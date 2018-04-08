@@ -1,4 +1,4 @@
-require "foodie/version"
+# require "foodie/version"
 require 'foodie/food'
 
 module Foodie

@@ -1,4 +1,5 @@
 require 'active_support/inflector'
+
 module Foodie
   class Food
     def self.portray(food)
@@ -8,9 +9,9 @@ module Foodie
         "Delicious!"
       end
     end
-  end
-end
 
-def self.pluralize(word)
-  word.pluralize
+    def self.pluralize(word)
+      word.pluralize
+    end
+  end
 end

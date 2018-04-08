@@ -1,7 +1,13 @@
 require 'thor'
+require 'foodie'
 require 'foodie/generators/recipe'
 module Foodie
   class CLI < Thor
+
+    desc "portray ITEM", "Determines if a piece of food is gross or delicious"
+    def portray(name)
+      puts Foodie::Food.portray(name)
+    end
 
     desc "recipe","Generates a recipe scaffold"
     def recipe(group, name)
